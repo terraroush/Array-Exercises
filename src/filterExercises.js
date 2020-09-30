@@ -25,10 +25,10 @@ export const getFullTimeStudents = () => {
 // It should accept one integer parameter name `instructorId`
 // It should return an array of students with that instructor
 
-// export const getStudentsByInstructorId = (instructorId) => {
-//     const taughtBy = students.filter(student => student.instructorId === instructorId)
-//     return taughtBy
-// }
+export const getStudentsByInstructorId = (instructorId) => {
+    const taughtBy = students.filter(student => student.instructorId === instructorId)
+    return taughtBy
+}
 
 // Export a function called getPolyglotStudents
 // It should accept one integer parameter named `languageCount`
