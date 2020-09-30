@@ -11,6 +11,7 @@ const instructors = useInstructors();
     let specificCohort = students.filter(student => student.cohort === cohort)
     return specificCohort
 }
+// console.log(getStudentsInCohort(43))
 
 // Export a function called getFullTimeStudents
 // It should not accept any parameters
@@ -39,14 +40,15 @@ export const getPolyglotStudents = (languageCount) => {
     const polyglottons = students.filter(student => student.languages.length >= languageCount) 
     return polyglottons
 }
+// console.log(getPolyglotStudents(2))
 
 // Export a function called getAvailableInstructors
 // It should not accept any parameters
 // It should return an array of instructors that don't have any students
 
-// export const getAvailableInstructors = () => {
-//     const studentless = students.filter()
-// }
+export const getAvailableInstructors = () => {
+    const studentless = students.filter()
+}
 
 // Export a function called getStudentsByLanguage
 // It should accept one string parameter named `language`
