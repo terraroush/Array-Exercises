@@ -16,10 +16,10 @@ const instructors = useInstructors();
 // It should not accept any parameters
 // It should return an array of only the full time students
 
-// export const getFullTimeStudents = () => {
-//     const fullTimers = students.filter(student => student.fullTime === true)
-//     return fullTimers
-// }
+export const getFullTimeStudents = () => {
+    const fullTimers = students.filter(student => student.fullTime === true)
+    return fullTimers
+}
 
 // Export a function called getStudentsByInstructorId
 // It should accept one integer parameter name `instructorId`
