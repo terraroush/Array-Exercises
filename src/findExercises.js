@@ -33,7 +33,7 @@ export const getStudentByLastName = (lastName) => {
     const studentByLast = students.find(student => student.lastName.toLowerCase() === lastName.toLowerCase())
     return studentByLast
 }
-console.log(getStudentByLastName("mason"))
+// console.log(getStudentByLastName("mAson"))
 
 // Export a function called getStudentByName
 // It should accept one string parameter named `fullName`
@@ -41,14 +41,20 @@ console.log(getStudentByLastName("mason"))
 // It should NOT be case sensitive
 // Ex: getStudentByName("Summer SMITH")
 
-// export const getStudentByName = (fullName) => {
-//     const studentByFull = students.find(student => student.fullName === (student.))
-// }
+        // export const getStudentByName = (fullName) => {
+        //     const studentByFull = students.find(student => (student.firstName.toLowerCase() + " " + student.lastName.toLowerCase())) === fullName.toLowerCase()
+        //     return studentByFull
+        // }
+        // console.log(getStudentByName("Summer smith"))
 
 // Export a function called getInstructorOfStudent
 // It should accept one integeter parameter named `studentId`
 // It should return the instructor object of the student whose id matches `studentId`
 // Ex: getInstructorOfStudent(4)      // returns Brenda Long
+
+export const getInstructorOfStudent = (studentId) => {
+    const instructorOfStudent = students.find(student => student.instructorId)
+}
 
 // Export a function called getStudentWithMostLangs
 // It should not accept any parameters
